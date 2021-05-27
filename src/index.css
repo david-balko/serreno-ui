@@ -1,6 +1,28 @@
+@font-face {
+  font-family: "Calibri";
+  src: local("CalibriRegular"),
+    url("./assets/fonts/CalibriRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: local("CalibriLight"),
+    url("./assets/fonts/CalibriLight.ttf") format("truetype");
+  font-weight: 100 300;
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: local("CalibriBold"),
+    url("./assets/fonts/CalibriBold.ttf") format("truetype");
+  font-weight: bold;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+  height: 100%;
+  font-family: 'Calibri', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
