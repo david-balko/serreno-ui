@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/serreno-ui/static/css/main.e6e83522.chunk.css",
+    "main.js": "/serreno-ui/static/js/main.59bd03ff.chunk.js",
+    "main.js.map": "/serreno-ui/static/js/main.59bd03ff.chunk.js.map",
+    "runtime-main.js": "/serreno-ui/static/js/runtime-main.a199cffb.js",
+    "runtime-main.js.map": "/serreno-ui/static/js/runtime-main.a199cffb.js.map",
+    "static/js/2.3d0d1a8c.chunk.js": "/serreno-ui/static/js/2.3d0d1a8c.chunk.js",
+    "static/js/2.3d0d1a8c.chunk.js.map": "/serreno-ui/static/js/2.3d0d1a8c.chunk.js.map",
+    "static/js/3.69e5880e.chunk.js": "/serreno-ui/static/js/3.69e5880e.chunk.js",
+    "static/js/3.69e5880e.chunk.js.map": "/serreno-ui/static/js/3.69e5880e.chunk.js.map",
+    "index.html": "/serreno-ui/index.html",
+    "static/css/main.e6e83522.chunk.css.map": "/serreno-ui/static/css/main.e6e83522.chunk.css.map",
+    "static/js/2.3d0d1a8c.chunk.js.LICENSE.txt": "/serreno-ui/static/js/2.3d0d1a8c.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/serreno-ui/static/media/CalibriRegular.29c57b05.ttf",
+    "static/media/backButton.a5ea6d20.svg": "/serreno-ui/static/media/backButton.a5ea6d20.svg",
+    "static/media/serrenoLogo.c6a1c144.png": "/serreno-ui/static/media/serrenoLogo.c6a1c144.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a199cffb.js",
+    "static/js/2.3d0d1a8c.chunk.js",
+    "static/css/main.e6e83522.chunk.css",
+    "static/js/main.59bd03ff.chunk.js"
+  ]
+}
