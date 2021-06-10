@@ -14,7 +14,7 @@ export const AppRouter = inject()(observer((props) =>  {
         <Route exact path="/" render={() => <AppMain />}/>
         <Route exact path="/splash" render={() => <SplashScreen />}/>
         <Route exact path="/init" render={() => <AppInit />}/>
-        <Redirect to="/splash" />
+        <Redirect to="/" />
       </Switch>
     </div>
   )
