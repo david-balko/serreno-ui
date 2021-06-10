@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/serreno-ui/static/css/main.e6e83522.chunk.css",
-    "main.js": "/serreno-ui/static/js/main.eca179e2.chunk.js",
-    "main.js.map": "/serreno-ui/static/js/main.eca179e2.chunk.js.map",
+    "main.js": "/serreno-ui/static/js/main.b09f5029.chunk.js",
+    "main.js.map": "/serreno-ui/static/js/main.b09f5029.chunk.js.map",
     "runtime-main.js": "/serreno-ui/static/js/runtime-main.ef7ca0aa.js",
     "runtime-main.js.map": "/serreno-ui/static/js/runtime-main.ef7ca0aa.js.map",
     "static/js/2.26f8ab08.chunk.js": "/serreno-ui/static/js/2.26f8ab08.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.ef7ca0aa.js",
     "static/js/2.26f8ab08.chunk.js",
     "static/css/main.e6e83522.chunk.css",
-    "static/js/main.eca179e2.chunk.js"
+    "static/js/main.b09f5029.chunk.js"
   ]
 }
