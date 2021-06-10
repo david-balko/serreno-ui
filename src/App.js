@@ -1,5 +1,5 @@
 import { AppHeader } from './components/AppHeader/AppHeader';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import { AppRouter } from './components/AppRouter';
 import { ThemeProvider } from '@material-ui/styles';
 import { theme } from './consts/theme';
