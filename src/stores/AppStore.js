@@ -5,18 +5,18 @@ export class AppStore {
 
     this.appInitStage = 'bed'
     this.monitorView = 'graph'
-    this.monitorTimeStep = 6
     this.monitorFocus = 'UO'
+    this.eventsRef = null
 
     makeObservable(this, {
       appInitStage: observable,
       setAppInitStage: action,
       monitorView: observable,
       setMonitorView: action,
-      monitorTimeStep: observable,
-      setMonitorTimeStep: action,
       monitorFocus: observable,
-      setMonitorFocus: action
+      setMonitorFocus: action,
+      eventsRef: observable,
+      setEventsRef: action,
     })
   }
 
@@ -32,16 +32,14 @@ export class AppStore {
     }
   }
 
-  setMonitorTimeStep = hours => {
-    if (!isNaN(hours) && hours >= 3 && hours <= 72) {
-      this.monitorTimeStep = hours
-    }
-  }
-
   setMonitorFocus = focus => {
     if (focus.match(/^(UO|IAP)$/)) {
       this.monitorFocus = focus
     }
+  }
+
+  setEventsRef = ref => {
+    this.eventsRef = ref
   }
 
 }

@@ -20,7 +20,7 @@ export const SideBarTemp = inject('AppStore')(observer((props) =>  {
   const classes = useStyles()
 
   return (
-    <div className={`sidebar-element ${classes.sideBarTemp}`}>
+    <div id="sidebar-temp" className={`sidebar-element ${classes.sideBarTemp}`}>
       <div className={classes.text}>
         <Typography variant="body2">
           {`Temp`}

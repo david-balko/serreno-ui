@@ -21,7 +21,7 @@ export const SideBarUO = inject('AppStore')(observer((props) =>  {
   const classes = useStyles()
 
   return (
-    <div className={`sidebar-element ${classes.sideBarUO}`} onClick={setUOMonitorFocus}>
+    <div id="sidebar-uo" className={`sidebar-element ${classes.sideBarUO}`} onClick={setUOMonitorFocus}>
       <div className={classes.header}>
         <Typography >
           {`UO`}

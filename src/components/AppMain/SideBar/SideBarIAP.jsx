@@ -26,7 +26,7 @@ export const SideBarIAP = inject('AppStore')(observer((props) =>  {
   const classes = useStyles()
 
   return (
-    <div className={`sidebar-element ${classes.sideBarIAP}`} onClick={setIAPMonitorFocus}>
+    <div id="sidebar-iap" className={`sidebar-element ${classes.sideBarIAP}`} onClick={setIAPMonitorFocus}>
       <div className={classes.text}>
         <Typography variant="body2">
           {`IAP`}

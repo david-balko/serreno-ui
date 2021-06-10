@@ -21,7 +21,7 @@ export const SideBarIAPWide = inject('AppStore')(observer((props) =>  {
   const classes = useStyles()
 
   return (
-    <div className={`sidebar-element ${classes.sideBarIAPWide} wide`}>
+    <div id="sidebar-iap-wide" className={`sidebar-element ${classes.sideBarIAPWide} wide`}>
       <Typography className={classes.header}>
         {`IAP mmHg`}
       </Typography>

@@ -3,6 +3,16 @@ import { createMuiTheme } from "@material-ui/core";
 const cssConstants = {
   header: {
     height: 74,
+  },
+  sideBar: {
+    idealWidth: 242
+  },
+  mainView: {
+    idealWidth: 242
+  },
+  graphView: {
+    yAxisWidth: 60,
+    marginRight: 24
   }
 }
 
@@ -11,16 +21,21 @@ const theme = createMuiTheme({
   palette: {
     background: '#2a2d56',
     events: {
-      main: '#c5fbb4'
+      main: '#c5fbb4',
+      background: 'rgba(197, 251, 180, 0.3)'
     },
     uo: {
-      main: '#facd91'
+      main: '#facd91',
+      line: '#facd91',
+      background: '#facd91',
     },
     iap: {
-      main: '#7fd6fe'
+      main: '#7fd6fe',
+      line: '#08a9f0'
     },
     temp: {
-      main: '#e5a8fb'
+      main: '#e5a8fb',
+      line: '#e5a8fb'
     },
     headers: '#171b3e'
   },

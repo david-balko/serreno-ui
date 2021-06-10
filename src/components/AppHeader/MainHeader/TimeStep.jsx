@@ -24,17 +24,17 @@ const useStyles = makeStyles(theme => ({
   }
 }), { name: 'appHeader'})
 
-export const TimeStep = inject('AppStore')(observer((props) =>  {
+export const TimeStep = inject('MonitorStore')(observer((props) =>  {
 
-  const { AppStore } = props
+  const { MonitorStore } = props
 
-  const classes = useStyles({ monitorTimeStep: AppStore.monitorTimeStep })
+  const classes = useStyles({ monitorTimeStep: MonitorStore.monitorTimeStep })
 
   return (
     <div className={classes.timeStep}>
-      <Typography variant="subtitle2" onClick={() => AppStore.setMonitorTimeStep(AppStore.monitorTimeStep - 1)}>{`-`}</Typography>
-      <Typography className={classes.hours} >{`${AppStore.monitorTimeStep} h`}</Typography>
-      <Typography variant="subtitle2" onClick={() => AppStore.setMonitorTimeStep(AppStore.monitorTimeStep + 1)}>{`+`}</Typography>
+      <Typography variant="subtitle2" onClick={() => MonitorStore.setMonitorTimeStep(MonitorStore.monitorTimeStep - 1)}>{`-`}</Typography>
+      <Typography className={classes.hours} >{`${MonitorStore.monitorTimeStep} h`}</Typography>
+      <Typography variant="subtitle2" onClick={() => MonitorStore.setMonitorTimeStep(MonitorStore.monitorTimeStep + 1)}>{`+`}</Typography>
     </div>
   )
 }))

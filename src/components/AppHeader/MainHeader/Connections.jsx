@@ -1,6 +1,8 @@
 import { makeStyles } from "@material-ui/core";
 import { inject, observer } from "mobx-react";
+import { BagIcon } from "./BagIcon";
 import { CheckMarkIcon } from "./CheckMarkIcon";
+import { ExpendableIcon } from "./ExpendableIcon";
 import { ThermometerIcon } from "./ThermometerIcon";
 
 const useStyles = makeStyles(theme => ({
@@ -23,15 +25,15 @@ export const Connections = inject()(observer((props) =>  {
   return (
     <div className={classes.connections}>
       <div>
-        <ThermometerIcon />
+        <ExpendableIcon />
         <CheckMarkIcon className={classes.checkMark} />
       </div>
       <div>
-        <ThermometerIcon />
+        <BagIcon />
         <CheckMarkIcon className={classes.checkMark} />
       </div>
       <div>
-        <ThermometerIcon />
+        <ExpendableIcon />
         <CheckMarkIcon className={classes.checkMark} />
       </div>
       <div>

@@ -15,7 +15,7 @@ export const SideBarEvents = inject()(observer((props) =>  {
   const classes = useStyles()
 
   return (
-    <div className={`sidebar-element ${classes.sideBarEvents}`}>
+    <div id="sidebar-events" className={`sidebar-element ${classes.sideBarEvents}`}>
       <Typography>
         {`Events`}
       </Typography>

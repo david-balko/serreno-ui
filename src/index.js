@@ -6,17 +6,20 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'mobx-react';
 import { AppStore as appStore } from './stores/AppStore';
 import { MonitorStore as monitorStore } from './stores/MonitorStore';
+import { GraphStore as graphStore } from './stores/GraphStore';
 import './assets/fonts/CalibriLight.ttf'
 import './assets/fonts/CalibriRegular.ttf'
 import './assets/fonts/CalibriBold.ttf'
 
 const AppStore = new appStore()
 const MonitorStore = new monitorStore()
+const GraphStore = new graphStore()
 
 
 const stores = {
   AppStore,
-  MonitorStore
+  MonitorStore,
+  GraphStore
 }
 
 ReactDOM.render(

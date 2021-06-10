@@ -1,7 +1,6 @@
 import { CircularProgress, makeStyles } from "@material-ui/core";
 import { inject, observer } from "mobx-react";
 import SerrenoLogo from '../assets/images/serrenoLogo.png';
-import TzurLogo from '../assets/images/tzurLogo.png'
 
 const useStyles = makeStyles(theme => ({
   splashScreen: {
@@ -35,7 +34,6 @@ export const SplashScreen = inject()(observer((props) =>  {
           <img src={SerrenoLogo} className={classes.logo} alt="serreno-logo" />
           <CircularProgress size={75} thickness={5} />
       </div>
-      <img className={classes.tzurLogo} src={TzurLogo} alt="tzur-logo" />
     </>
   )
 }))

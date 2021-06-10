@@ -35,32 +35,32 @@ const useStyles = makeStyles(theme => ({
   }
 }), { name: 'sideBar'})
 
-export const SideBarUOWide = inject('AppStore')(observer((props) =>  {
+export const SideBarUOWide = inject('MonitorStore')(observer((props) =>  {
 
-  const { AppStore } = props
+  const { MonitorStore } = props
 
-  const [ totalStartHour, setTotalStartHour ] = useState(moment().subtract(AppStore.monitorTimeStep - 1, 'hours').format('HH'))
+  const [ totalStartHour, setTotalStartHour ] = useState(moment().subtract(MonitorStore.monitorTimeStep - 1, 'hours').format('HH'))
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTotalStartHour(moment().subtract(AppStore.monitorTimeStep - 1, 'hours').format('HH'))
+      setTotalStartHour(moment().subtract(MonitorStore.monitorTimeStep - 1, 'hours').format('HH'))
     }, 60000)
 
     return () => {
       clearInterval(timer)
     }
-  }, [AppStore.monitorTimeStep])
+  }, [MonitorStore.monitorTimeStep])
 
   useEffect(() => {
-    setTotalStartHour(moment().subtract(AppStore.monitorTimeStep - 1, 'hours').format('HH'))
-  }, [AppStore.monitorTimeStep])
+    setTotalStartHour(moment().subtract(MonitorStore.monitorTimeStep - 1, 'hours').format('HH'))
+  }, [MonitorStore.monitorTimeStep])
 
 
 
   const classes = useStyles({ totalStartHour })
 
   return (
-    <div className={`sidebar-element ${classes.sideBarUOWide} wide`}>
+    <div id="sidebar-uo-wide" className={`sidebar-element ${classes.sideBarUOWide} wide`}>
       <Typography>
         {`UO cc/h`}
       </Typography>
